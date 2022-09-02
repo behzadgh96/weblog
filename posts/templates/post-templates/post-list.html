@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Posts List</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+      <h1><center>Hello to everyone</center></h1>
+      <ul>
+
+        {%for p in posts%}
+            <li>{{p.title}}</li>
+        {%endfor%}    
+
+      </ul>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1>{{posts.title}}</h1>
+        <p>{{posts.text}}</p>
+        <ul>
+            {%for i in comments%}
+            <li><p>{{i.text}}-{{i.created_date}}</p></li>
+            {%endfor%}
+
+
+        </ul>
+
+        
+        
+    </body>
+</html>
